@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlashCard Lite"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- SharedPreferences: user enters their name here -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name (saved via SharedPreferences):"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnSaveName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Name"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Displays the saved name loaded from SharedPreferences -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Flashcard"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View My Flashcards"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Map"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📱 Accelerometer Sensor Demo"/>
+
+</LinearLayout>
